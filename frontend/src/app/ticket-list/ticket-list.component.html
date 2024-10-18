@@ -1,0 +1,49 @@
+  <div class="mx-3 mt-3">
+    <table class="table table table-bordered">
+      <thead class="table-success" >
+        <tr>
+          <th scope="col" class="bg-success text-light fw-bold">Ticket Id</th>
+          <th scope="col" class="bg-success text-light fw-bold">Description</th>
+          <th scope="col" class="bg-success text-light fw-bold">Status</th>
+          <th scope="col" class="bg-success text-light fw-bold">Date</th>
+          <th scope="col" rowspan="2" class="bg-success text-light fw-bold"> Actions </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let row of rows; let i = index">
+          <th scope="row">{{ row.id }}</th>
+          <td>{{ row.description }}</td>
+          <td>{{ row.isOpened ? 'Open' : 'Closed' }}</td>
+          <td>{{ row.createdAt | date:'MMM d, y' }}</td>
+          <td>
+            <a href="ticket/edit/{{ row.id }}">Update</a>
+            <span> | </span>
+            <a href="/tickets" (click)="deleteTicket(row.id)"> Delete</a>
+            <!-- <button class="btn btn-danger" (click)="deleteTicket(row.Id)">Delete</button> -->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+<nav>
+  <ul class="pagination justify-content-center">
+    <li class="page-item" [class.disabled]="currentPage === 1">
+      <a class="page-link" (click)="changePage(currentPage - 1)" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="page-item" *ngFor="let page of totalPagesArray" [class.active]="page === currentPage">
+      <a class="page-link" (click)="changePage(page)">{{ page }}</a>
+    </li>
+    <li class="page-item" [class.disabled]="currentPage === totalPages">
+      <a class="page-link" (click)="changePage(currentPage + 1)" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<div class="mx-3">
+  <a class="btn btn-success" href="/ticket/add">Add New</a>
+</div>
