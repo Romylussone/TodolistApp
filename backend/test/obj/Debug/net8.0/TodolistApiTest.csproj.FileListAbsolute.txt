@@ -678,3 +678,4 @@ C:\Users\rkouassi\Projects\Personal\hahnTodoProject\todoAppGithub\TodolistApp\ba
 C:\Users\rkouassi\Projects\Personal\hahnTodoProject\todoAppGithub\TodolistApp\backend\test\obj\Debug\net8.0\TodolistApiTest.pdb
 C:\Users\rkouassi\Projects\Personal\hahnTodoProject\todoAppGithub\TodolistApp\backend\test\obj\Debug\net8.0\TodolistApiTest.genruntimeconfig.cache
 C:\Users\rkouassi\Projects\Personal\hahnTodoProject\todoAppGithub\TodolistApp\backend\test\obj\Debug\net8.0\ref\TodolistApiTest.dll
+C:\Users\rkouassi\Projects\Personal\hahnTodoProject\todoAppGithub\TodolistApp\backend\test\obj\Debug\net8.0\TodolistApiTest.sourcelink.json

@@ -54,3 +54,4 @@ COPY --from=build /app .
 USER $APP_UID
 
 ENTRYPOINT ["dotnet", "TodolistApi.dll"]
+EXPOSE 7280
