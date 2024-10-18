@@ -16,7 +16,7 @@ Both applications can be built and run using Docker.
 
 1. Navigate to the backend directory:
     ```sh
-    cd backend
+    cd .\backend\src\
     ```
 
 2. Build the Docker image:
