@@ -39,7 +39,7 @@ This project consists of two main applications:
 
 1. Navigate to the backend directory:
     ```sh
-    cd backend
+    cd .\backend\src\
     ```
 
 2. Build the Docker image:
